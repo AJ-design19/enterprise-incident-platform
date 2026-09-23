@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+.Python
+build/
+dist/
+
+# Env
+.env
+.venv/
+venv/
+env/
+
+# Data & DB
+vector_db/chroma_store/
+graph/neo4j_data/
+neo4j/data/
+neo4j/logs/
+*.log
+logs/*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+
+# Docker
+docker-compose.override.yml
+
+# Reports generated at runtime
+sample_data/reports/*.pdf
+sample_data/reports/*.csv
+!sample_data/reports/.gitkeep

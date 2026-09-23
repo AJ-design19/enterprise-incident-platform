@@ -1,0 +1,14 @@
+service,calls,uses_api,uses_db,hosted_on
+payment-api,order-service,payment-gateway-api,payment-db,payments-cluster-01
+order-service,inventory-api,,order-db,orders-cluster-01
+inventory-api,,,inventory-db,inventory-cluster-01
+auth-service,,identity-provider-api,auth-db,identity-cluster-01
+notification-service,,smtp-provider-api,,platform-cluster-01
+session-cache,,,,platform-cluster-01
+api-gateway,payment-api,,,platform-cluster-01
+api-gateway,order-service,,,platform-cluster-01
+api-gateway,auth-service,,,platform-cluster-01
+order-service,,,,orders-cluster-01
+payment-api,,,,payments-cluster-01
+order-service,session-cache,,,orders-cluster-01
+payment-api,session-cache,,,payments-cluster-01
