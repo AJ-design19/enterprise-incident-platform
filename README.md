@@ -2,7 +2,8 @@
 
 A local, agentic AI system that turns a plain-English incident report into a
 classified, root-cause-analyzed, actionable response — grounded in your service
-topology, SOPs, and logs. Built as a 6-week internship project.
+topology, SOPs, and logs.
+
 
 **Stack:** Python · LangGraph · Ollama · Neo4j · ChromaDB · Streamlit · Docker
 
@@ -83,15 +84,6 @@ pytest -m integration        # full pipeline against live Ollama/Neo4j/Chroma
 - [Architecture](docs/architecture.md) — system design, agent flow, graph schema
 - [Installation](docs/installation.md) — Docker and local setup, troubleshooting
 - [API / Module Reference](docs/api_documentation.md) — how to use each module programmatically
-
-## Roadmap (from the 6-week plan)
-
-- [x] Week 1 — Environment setup, dataset preparation
-- [x] Week 2 — Data ingestion & knowledge graph
-- [x] Week 3 — Four individual agents
-- [x] Week 4 — Multi-agent LangGraph workflow
-- [x] Week 5 — Streamlit dashboard
-- [x] Week 6 — Testing, Docker packaging, documentation
 
 ## License
 
